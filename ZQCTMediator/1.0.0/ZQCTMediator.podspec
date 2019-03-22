@@ -28,11 +28,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/caozhiqiang1002/ZQCTMediator.git", :tag => "#{s.version}" }
 
-  s.subspec 'Frameworks' do |sub|
-    
-    sub.vendored_frameworks = "SDK/ZQCTMediator.framework"
-
-  end
+  s.vendored_frameworks = "SDK/ZQCTMediator.framework"
 
   s.requires_arc = true
 
